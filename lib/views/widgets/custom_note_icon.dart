@@ -44,11 +44,12 @@ class NoteItem extends StatelessWidget {
               trailing: IconButton(
                 icon: const Icon(
                   Icons.delete,
-                  // FontAwesomeIcons.trash,
                   color: Colors.black,
                   size: 24,
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  note.delete();
+                },
               ),
             ),
             Padding(
